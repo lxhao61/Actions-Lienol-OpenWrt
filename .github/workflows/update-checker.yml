@@ -12,8 +12,8 @@
 name: Update Checker
 
 env:
-  REPO_URL: https://github.com/coolsnowwolf/lede
-  REPO_BRANCH: master
+  REPO_URL: https://github.com/xiaorouji/openwrt-passwall.git
+  REPO_BRANCH: main
 
 on:
   workflow_dispatch:
@@ -49,7 +49,7 @@ jobs:
       uses: peter-evans/repository-dispatch@v1
       with:
         token: ${{ secrets.ACTIONS_TRIGGER_PAT }}
-        event-type: Source Code Update
+        event-type: Update OpenWrt
 
     - name: Delete workflow runs
       uses: GitRML/delete-workflow-runs@main
