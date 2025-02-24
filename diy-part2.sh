@@ -48,6 +48,9 @@ git clone https://github.com/gw826943555/openwrt_msd_lite.git package/msd_lite
 #git clone https://github.com/ximiTech/msd_lite.git package/msd_lite
 #git clone https://github.com/ximiTech/luci-app-msd_lite.git package/luci-app-msd_lite
 
+# 拉取 OpenAppFilter、luci-app-oaf
+git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
+
 # 删除 passwall-packages 中 gn
 #rm -rf package/passwall/packages/gn
 # 删除 passwall-packages 中 naiveproxy
